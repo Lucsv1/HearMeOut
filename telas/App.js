@@ -1,6 +1,5 @@
 import { StyleSheet, Text, View, Image, TextInput } from "react-native";
 import imgLogo from "./assets/LOGO.webp";
-import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const Formulario = (props) => {
   return (
@@ -10,10 +9,24 @@ const Formulario = (props) => {
         <Text style={styles2.text2Container}>Out</Text>
       </View>
       <View style={styles2.container2}>
-        <Text>Usuario</Text>
-        <TextInput/>
-        <Text>Senha</Text>
-        <TextInput/>
+        <Text style={styles2.textInput1}>Usuario</Text>
+        <TextInput style={styles2.input1}/>
+        <Text style={styles2.textInput2}>Senha</Text>
+        <TextInput style={styles2.input2}/>
+        <View style={styles2.botao}>
+          <Text style={styles2.botaoTxt}>
+            Cotinuar
+          </Text>
+        </View>
+      </View>
+      <View style={styles2.container3}>
+        <Text style={styles2.textContainer3}>Esqueceu sua senha ?</Text>
+        <Text>clique aqui</Text>
+        <View>
+          <Text>.</Text>
+        </View>
+        <Text style={styles2.textContainer3}>ainda nao tem conta ?</Text>
+        <Text>Registre-se</Text>
       </View>
     </View>
   );
@@ -64,14 +77,75 @@ const styles2 = StyleSheet.create({
     marginTop: 30,
   },
   text1Container: {
-    fontSize: 40,
+    fontSize: 50,
 
   },
   text2Container:{
-    fontSize: 40,
+    fontSize: 50,
     color: "#FFBD59"
   },
   container2:{
     flex: 4,
+    borderWidth:1,
+    width: "60%",
+    alignSelf: 'center',
+    justifyContent: 'center'
+  },
+  textInput1:{
+    fontSize:19,
+    position: 'relative',
+    left: 5,
+    fontWeight: 'bold'
+  },
+  textInput2:{
+    fontSize:19,
+    position: 'relative',
+    top: 10,
+    left: 5,
+    fontWeight: 'bold'
+  },
+  input1:{
+    backgroundColor: "#FFBD59",
+    marginTop: 10,
+    marginBottom: 15,
+    borderRadius: 10,
+    height:'10%'
+  },
+  input2:{
+    backgroundColor: "#FFBD59",
+    marginTop: 10,
+    marginBottom: 15,
+    borderRadius: 10,
+    height:'10%',
+    position: 'relative',
+    top: 10,
+  },
+
+  botao:{
+    alignItems: 'center',
+    marginTop: 25
+  },
+  botaoTxt:{
+    fontSize:20,
+    backgroundColor: '#FFBD59',
+    padding: 10,
+    borderRadius: 10,
+    width: '45%',
+    textAlign: 'center',
+    fontWeight: 'bold'
+  },
+
+  container3:{
+    flex: 3,
+    borderWidth:1,
+    alignSelf: 'center',
+    width: "50%",
+  },
+  textContainer3:{
+    textAlign:'center',
+    fontSize: 20,
+    fontWeight: 'bold'
+
   }
+
 });
