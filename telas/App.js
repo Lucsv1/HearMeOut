@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View, Image, TextInput } from "react-native";
+
 import imgLogo from "./assets/LOGO.webp";
 
 const Formulario = (props) => {
@@ -21,12 +22,12 @@ const Formulario = (props) => {
       </View>
       <View style={styles2.container3}>
         <Text style={styles2.textContainer3}>Esqueceu sua senha ?</Text>
-        <Text>clique aqui</Text>
-        <View>
-          <Text>.</Text>
+        <Text style={styles2.text2Container3}>clique aqui</Text>
+        <View style={styles2.barra}>
+          <Text style={styles2.barraTxt}>.</Text>
         </View>
         <Text style={styles2.textContainer3}>ainda nao tem conta ?</Text>
-        <Text>Registre-se</Text>
+        <Text style={styles2.text2Container3}>Registre-se</Text>
       </View>
     </View>
   );
@@ -86,7 +87,6 @@ const styles2 = StyleSheet.create({
   },
   container2:{
     flex: 4,
-    borderWidth:1,
     width: "60%",
     alignSelf: 'center',
     justifyContent: 'center'
@@ -137,7 +137,6 @@ const styles2 = StyleSheet.create({
 
   container3:{
     flex: 3,
-    borderWidth:1,
     alignSelf: 'center',
     width: "50%",
   },
@@ -145,7 +144,24 @@ const styles2 = StyleSheet.create({
     textAlign:'center',
     fontSize: 20,
     fontWeight: 'bold'
+  },
+  text2Container3:{
+    textAlign:'center',
+    color: '#FFBD59',
+    fontSize: 15,
+    fontWeight: 'bold'
+  },
+  barra:{
+    height: 1,
+    borderWidth: 1,
+    width: '50%',
+    alignSelf: "center",
+    marginTop: 10,
+    marginBottom: 10
 
+  },
+  barraTxt:{
+    textAlign:'center',
   }
 
 });
