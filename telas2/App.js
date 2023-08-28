@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, Image } from "react-native";
 import imgLogo from "./assets/LOGO.webp";
 import hand from "./assets/hand.png";
 import imgRapaz from './assets/rapaz.png';
-import imgSeta from './assets/seta.png'
+import imgSeta from './assets/seta.png';
 
 
 const Conteudo = () => {
