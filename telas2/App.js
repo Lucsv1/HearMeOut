@@ -36,7 +36,7 @@ const Conteudo = () => {
   );
 };
 
-export default function App() {
+export default function App2() {
   return (
     <View style={styles.main}>
       <View style={styles.container}>
