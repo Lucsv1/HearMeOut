@@ -4,7 +4,6 @@ import hand from "./assets/hand.png";
 import imgRapaz from './assets/rapaz.png';
 import imgSeta from './assets/seta.png';
 
-
 const Conteudo = () => {
   return (
     <View style={styles2.main2}>
