@@ -12,7 +12,8 @@ const Stack = createStackNavigator();
 export default function App(props) {
   const [usuario, setUsuario] = useState("");
   const [senha, setSenha] = useState("");
-  const [email, setEmail] = useState("");
+  const [cnpj, setCnpj] = useState("");
+  const [confirmarSenha, setConfirmarSenha] = useState("")
 
 
   return (
@@ -48,8 +49,10 @@ export default function App(props) {
               setUsuario={setUsuario}
               senha={senha}
               setSenha={setSenha}
-              email={email}
-              setEmail={setEmail}
+              confirmarSenha={confirmarSenha}
+              setConfirmarSenha={setConfirmarSenha}
+              cnpj={cnpj}
+              setCnpj={setCnpj}
             />
           )}
         </Stack.Screen>

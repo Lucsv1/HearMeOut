@@ -48,6 +48,7 @@ export const Formulario = (props) => {
           value={senha}
           onChangeText={setSenha}
           style={styles2.input2}
+          secureTextEntry={true}
         />
         <View style={styles2.botao}>
           <Text style={styles2.botaoTxt} onPress={()=>{
